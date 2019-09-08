@@ -5,7 +5,7 @@ project(particlefire-revision-testing)
 include(CTest)
 
 # Set up project folders
-set(PARTICLEFIRE_DIR CMAKE_CURRENT_SOURCE_DIR)
+set(PARTICLEFIRE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(PARTICLEFIRE_BIN ${PARTICLEFIRE_DIR}/bin) 
 
 #Compile options for SDL
