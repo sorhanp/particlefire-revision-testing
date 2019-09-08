@@ -1,3 +1,11 @@
+#dolphin and kate-swp
+.directory
+*.kate-swp
+
+#build and bin folders of the project
+bin/*
+build/*
+
 # Prerequisites
 *.d
 
