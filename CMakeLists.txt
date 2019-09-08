@@ -8,5 +8,8 @@ include(CTest)
 set(PARTICLEFIRE_DIR CMAKE_CURRENT_SOURCE_DIR)
 set(PARTICLEFIRE_BIN PARTICLEFIRE_DIR/bin) 
 
+#Compile options for SDL
+add_compile_options(-lSDL2main -lSDL2)
+
 add_subdirectory(source)
 #add_subdirectory(tests)
