@@ -11,6 +11,10 @@ add_library(${PARTICLEFIRE_TEST}
     swarm.cpp
     swarm.h)
 
+# Include library directory as an Interface
+target_include_directories(${PARTICLEFIRE_TEST}
+    INTERFACE ./)
+
 # Install library to bin-directory for testing
 install(TARGETS ${PARTICLEFIRE_TEST}
     ARCHIVE DESTINATION ${PARTICLEFIRE_BIN})
