@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.13.4)
 set(CMAKE_CXX_STANDARD 11)
 project(particlefire-revision-testing)
 
-# See if boost is installed
-find_package(Boost 1.67.0)
+# See if boost is installed and add Boost::boost
+find_package(Boost REQUIRED)
 if(Boost_FOUND)
     message(STATUS "Boost libraries found!")
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
