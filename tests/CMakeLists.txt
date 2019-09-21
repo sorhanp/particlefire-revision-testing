@@ -26,10 +26,10 @@ add_executable(${PARTICLEFIRE_TEST}
     main.cpp
     ${UNIT_TEST_SOURCE_LIST})
 
-# Link the library "particlefire" to executable
-target_link_libraries(${PARTICLEFIRE_TEST}
-  PUBLIC particlefire)
-
 #Link boost libraries to executable
 target_link_libraries(${PARTICLEFIRE_TEST}
-    PUBLIC ${Boost_LIBRARIES})
+PUBLIC ${Boost_LIBRARIES})
+
+# Link the library "particlefire" to executable
+target_link_libraries(${PARTICLEFIRE_TEST}
+  PUBLIC ${PARTICLEFIRE})

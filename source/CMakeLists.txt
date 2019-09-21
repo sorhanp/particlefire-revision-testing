@@ -1,9 +1,9 @@
 # Set target name for project files to be tested
-set(PARTICLEFIRE_TEST
+set(PARTICLEFIRE
     particlefire)
 
 # Create library from test files
-add_library(${PARTICLEFIRE_TEST}
+add_library(${PARTICLEFIRE}
     particle.cpp
     particle.h
     screen.cpp
@@ -12,9 +12,9 @@ add_library(${PARTICLEFIRE_TEST}
     swarm.h)
 
 # Include library directory as an Interface
-target_include_directories(${PARTICLEFIRE_TEST}
+target_include_directories(${PARTICLEFIRE}
     INTERFACE ./)
 
 # Install library to bin-directory for testing
-install(TARGETS ${PARTICLEFIRE_TEST}
+install(TARGETS ${PARTICLEFIRE}
     ARCHIVE DESTINATION ${PARTICLEFIRE_BIN})
