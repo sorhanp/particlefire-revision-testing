@@ -9,10 +9,8 @@ if(Boost_FOUND)
     message(STATUS "Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
     include_directories(${Boost_INCLUDE_DIRS})
     add_compile_options(-lboost_system)
-    #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lboost_system")
 endif()
  
-
 # Enable testing
 include(CTest)
 

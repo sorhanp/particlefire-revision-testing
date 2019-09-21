@@ -16,5 +16,5 @@ target_include_directories(${TEST_TARGETS}
     INTERFACE ./)
 
 # Install library to bin-directory for testing
-install(TARGETS ${TEST_TARGETS}
-    ARCHIVE DESTINATION ${PARTICLEFIRE_BIN})
+# install(TARGETS ${TEST_TARGETS}
+#    ARCHIVE DESTINATION ${PARTICLEFIRE_BIN})
