@@ -1,5 +1,5 @@
 #include <boost/test/unit_test.hpp>
-#include <particle.h>
+#include "particle.h"
 
 BOOST_AUTO_TEST_CASE( test_particle_reportings )
 {

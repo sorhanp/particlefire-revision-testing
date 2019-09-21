@@ -28,12 +28,13 @@ add_executable(${PARTICLEFIRE_TEST}
 
 # Link the library "particlefire" to executable
 target_link_libraries(${PARTICLEFIRE_TEST}
-PUBLIC ${PARTICLEFIRE})
+PUBLIC ${TEST_TARGETS})
 
-#Link boost libraries to executable
+# Link boost libraries to executable
 target_link_libraries(${PARTICLEFIRE_TEST}
 PUBLIC ${Boost_LIBRARIES})
 
+# Add tests, COMMAND can be the target
 add_test(
     NAME ${PARTICLEFIRE_TEST}
     WORKING_DIRECTORY ${PARTICLEFIRE_BIN}

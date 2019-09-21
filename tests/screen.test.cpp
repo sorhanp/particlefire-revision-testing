@@ -1,5 +1,5 @@
 #include <boost/test/unit_test.hpp>
-#include <screen.h>
+#include "screen.h"
 
 BOOST_AUTO_TEST_CASE( test_screen_reportings )
 {
