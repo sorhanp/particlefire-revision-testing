@@ -23,6 +23,7 @@ message(STATUS ":-------------------------------:")
 
 # Create executable by including files from UNIT_TEST_SOURCE_LIST
 add_executable(${PARTICLEFIRE_TEST}
+    main.cpp
     ${UNIT_TEST_SOURCE_LIST})
 
 # Link the library "particlefire" to executable
