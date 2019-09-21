@@ -32,7 +32,7 @@ PUBLIC particlefire)
 
 # Link boost libraries to executable
 target_link_libraries(${PARTICLEFIRE_TEST}
-PUBLIC ${Boost_LIBRARIES})
+PRIVATE Boost::boost)
 
 # Add tests, COMMAND can be the target
 add_test(
