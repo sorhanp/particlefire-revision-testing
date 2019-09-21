@@ -38,5 +38,5 @@ PUBLIC ${Boost_LIBRARIES})
 # Add tests, COMMAND can be the target
 add_test(
     NAME ${PARTICLEFIRE_TEST}
-    COMMAND ${PARTICLEFIRE_TEST} --log_format=XML --log_sink=report.xml --log_level=all --report_level=no
+    COMMAND ${PARTICLEFIRE_TEST} --log_format=XML --log_sink=../report.xml --log_level=all --report_level=no
 )
