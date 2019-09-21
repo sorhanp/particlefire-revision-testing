@@ -13,4 +13,4 @@ add_library(${TEST_TARGETS}
 
 # Include library directory as an Interface
 target_include_directories(${TEST_TARGETS}
-    INTERFACE ./)
+    PUBLIC ./)
