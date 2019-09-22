@@ -3,11 +3,13 @@
 
 struct ParticleFixture {
   ParticleFixture(){
+    
+  }
+  
+  ~ParticleFixture(){
+
   }
 
-  ParticleFixture(){
-
-  }
   particlefire::Particle particleF;
 };
 
