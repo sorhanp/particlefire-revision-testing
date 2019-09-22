@@ -13,9 +13,9 @@ struct SwarmFixture {
   particlefire::Swarm swarmF;
 };
 
-BOOST_FIXTURE_TEST_SUITE(ScreenClassTests, SwarmFixture)
+BOOST_FIXTURE_TEST_SUITE(SwarmClassTests, SwarmFixture)
 
-  BOOST_AUTO_TEST_CASE(InitTest_zero_position){
+  BOOST_AUTO_TEST_CASE(TDB){
 
   }
 

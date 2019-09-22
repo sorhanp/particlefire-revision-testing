@@ -23,4 +23,8 @@ BOOST_FIXTURE_TEST_SUITE(ScreenClassTests, ScreenFixture)
       BOOST_REQUIRE_EQUAL(screenF.target_fps_, 60);
   }
 
+  BOOST_AUTO_TEST_CASE(Init_test){
+      BOOST_REQUIRE_EQUAL(screenF.Init(), true);
+  }
+
 BOOST_AUTO_TEST_SUITE_END()
