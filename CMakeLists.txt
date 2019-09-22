@@ -11,9 +11,18 @@ if(Boost_FOUND)
     include_directories(
         ${Boost_INCLUDE_DIRS}
         ${Boost_LIBRARY_DIRS})
+    # Compile options for Boost
     add_compile_options(-lunit_test_framework)
 endif()
- 
+
+# See if SDL2 is installed
+find_package(SDL2 REQUIRED)
+if(SDL2_FOUND)
+    message(STATUS "SDL2_INCLUDE_DIRS: ${SDL2_INCLUDE_DIRS}")
+    include_directories(${SDL2_INCLUDE_DIRS})
+    # Compile options for SDL
+    add_compile_options(-lSDL2main -lSDL2)
+endif()
 
 # Enable testing
 include(CTest)
@@ -21,9 +30,6 @@ include(CTest)
 # Set up project folders variables
 set(PARTICLEFIRE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(PARTICLEFIRE_BIN ${PARTICLEFIRE_DIR}/bin) 
-
-# Compile options for SDL
-add_compile_options(-lSDL2main -lSDL2)
 
 # Include sources before tests
 add_subdirectory(source)

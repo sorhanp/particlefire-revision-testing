@@ -32,9 +32,10 @@ add_executable(${PARTICLEFIRE_TEST}
 target_link_libraries(${PARTICLEFIRE_TEST}
 PUBLIC particlefire)
 
-# Link boost libraries to executable
+# Link boost and SDL2 libraries to executable
 target_link_libraries(${PARTICLEFIRE_TEST}
-PUBLIC ${Boost_LIBRARIES})
+PUBLIC ${Boost_LIBRARIES}
+PUBLIC ${SDL2_LIBRARIES})
 
 # Add tests, COMMAND can be the target
 add_test(
