@@ -24,6 +24,9 @@ if(SDL2_FOUND)
     add_compile_options(-lSDL2main -lSDL2)
 endif()
 
+#Include FakeIt boost -single-header
+include_directories(${CMAKE_SOURCE_DIR}/externals/FakeIt)
+
 # Enable testing
 include(CTest)
 

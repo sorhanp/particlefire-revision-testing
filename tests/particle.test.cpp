@@ -1,16 +1,20 @@
 #include <boost/test/unit_test.hpp>
+#include <fakeit.hpp>
+
 #include <particle.h>
+#include <screen.h>
 
 struct ParticleFixture {
   ParticleFixture(){
-
+      fakeit::Mock<particlefire::Screen> spy(screenf);
   }
-  
+
   ~ParticleFixture(){
 
   }
 
   particlefire::Particle particleF;
+  particlefire::Screen screenf;
 };
 
 BOOST_FIXTURE_TEST_SUITE(ParticleClassTests, ParticleFixture)
